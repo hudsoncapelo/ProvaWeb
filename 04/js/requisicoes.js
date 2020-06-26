@@ -10,23 +10,22 @@ window.onload = function(e) {
 			var nameColuna = row.insertCell(1); 
 			var emailColuna = row.insertCell(2); 
 			var bodyColuna = row.insertCell(3); 
-			idPostColuna.innerHTML = post.postId;
-			nameColuna.innerHTML = post.name;
-			emailColuna.innerHTML = post.email;
-			bodyColuna.innerHTML = post.body;
+			idColuna.innerHTML = post.postId;
+			titleColuna.innerHTML = post.name;
+			BodyColuna.innerHTML = post.body;
 		})
 	}).catch(error => console.error(error))
 }
 
 function adicionaPost(){
-	document.getElementById('formPessoa').style.display="block"
+	document.getElementById('adicionaPost').style.display="block"
 }
 
 function enviarForm() {
 	var form = document.getElementById('adicionaPost');
 	var data = {};
-	data['name'] = form.name.value 
-	data['email'] = form.email.value;
+	data['name'] = 1
+	data['email'] = form.title.value;
 	data['body'] = form.body.value;
 	fetch('https://jsonplaceholder.typicode.com/comments', {
 		method: 'POST',       
