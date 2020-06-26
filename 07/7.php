@@ -84,5 +84,5 @@ class SuperHeroi {
 $SuperHeroi = new SuperHeroi('001','Goku', 'FOGO', 1000, 1000, 'SAYAJIN');
 $SuperHeroi = new SuperHeroi('002','Kuririn', 'MORRER', 1000, 1000, 'TERRA');
 $SuperHeroi = new SuperHeroi('003','Vegeta', 'invejoso', 1000, 1000, 'Aneis de saturno');
-$SuperHeroi = new SuperHeroi('004','Bem10', 'Transformar', 1000, 1000, 'Planeta terra');
+$SuperHeroi = new SuperHeroi('004','Ben10', 'Transformar', 1000, 1000, 'Planeta terra');
 ?>
